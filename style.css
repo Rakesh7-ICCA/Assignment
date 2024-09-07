@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+.container
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff28;
+    backdrop-filter: blur(10    px);
+    position: absolute;
+}
+  .cookiesContent {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px 30px 70px;
+    button.close {
+      width: 30px;
+      font-size: 20px;
+      color: #c0c5cb;
+      align-self: flex-end;
+      background-color: transparent;
+      border: none;
+      margin-bottom: 10px;
+    }
+    img {
+      width: 82px;
+      margin-bottom: 15px;
+    }
+    p {
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+    button.accept {
+      background-color: #ed6755;
+      border: none;
+      border-radius: 5px;
+      width: 200px;
+      padding: 14px;
+      font-size: 16px;
+      color: white;
+      box-shadow: 0px 6px 18px -5px rgba(237, 103, 85, 1);
+    }
+  }
+  
+
+
+#main{
+    height: 100vh;
+    width: 100%;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: royalblue;
+    font-size: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+    font-weight: 700;
+    
+    p{
+        /* font-size: 42px; */
+        font-weight: 500;
+        text-decoration: underline;
+        
+    }
+
+    #add{
+        background-color: white;
+        border-radius: 50%;
+        padding-inline: 10px;
+        color: black;
+        cursor: pointer;
+    }
+    #add:hover{
+        color: white;
+        background-color: black;
+    }
+}
+
+section{
+    background-color: white;
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    /* align-items: start; */
+    gap: 19px;
+    #card{
+        border-radius: 10px;
+        padding-bottom: 30px;
+        background: rosybrown;
+        /* height: 110px; */
+        min-height: fit-content;
+        width: 200px;
+        padding: 10px;
+        .name{
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .age, .job{
+            font-size: 22px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    header{
+        font-size: 32px;
+    }
+    section {
+
+        align-items: center;
+        
+        #card{
+            width: 100%;
+        }
+        justify-content: center;
+    }
+  }
